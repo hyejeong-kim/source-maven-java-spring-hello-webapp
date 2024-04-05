@@ -19,9 +19,9 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'ls- alh'
+        sh 'ls -alh'
         sh 'date'
-        sh 'maven test'
+        sh 'mvn test'
       }
     }
     stage('Deploy') {
